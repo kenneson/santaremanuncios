@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 80%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .head {
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .menuNav ul {
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .btnLogin {
+      width: 150px;
+      height: 34px;
+      font-size: 16px;
+    }
+    
+    .btnCadastro {
+      width: 150px;
+      height: 34px;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .slider {
+      height: 100px;
+    }
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    body {
+        font-size: 80%;
+        }
+  }

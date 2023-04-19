@@ -1,0 +1,522 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');   
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    body {
+        display: flex;
+        font-size: 100%;  
+        height: 100vh;
+        font-family: 'Montserrat'; 
+        justify-content: center; 
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*Mini Banner Promocional Topo do Site*/
+
+    .miniBanner {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-color: #0099ff;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /*---------------------------------------*/
+
+    /*Conteiner Azul Cabeçalho*/
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+        width: 100%;
+        height: 270px;
+        background-color: #0000ff;
+        flex-wrap: wrap;
+    }
+
+    /*---------------------------------------*/
+
+    .logo {
+        display: flex;
+        width: 260px;
+        height: 260px;
+    }
+
+    .posicaoLogo {
+        display: flex;  
+    }
+
+    /*Menu*/
+
+    .menuNav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 60px;
+        font-weight: 600;
+    }
+
+    .menuNav ul li a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .menuNav ul li a:hover {
+        color: yellow;
+    }
+
+    .PosicaoMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        padding-bottom: 60px;
+    }
+
+    /*---------------------------------------*/
+
+    .grupoBarraPesquisa {
+        display: flex;
+        align-items: center;
+        width: 580px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #fff;
+        justify-content: center;
+        border-style: none;
+        border: none;
+    }
+
+    #txtBarraPesquisa{
+        width: 100%;
+        height: 35px;
+        border-style: none;
+        border-radius: 10px;
+        background-color: transparent;  
+    }
+
+
+    /* Botões Login e Cadastre-se*/
+
+    .btnLoginPosicao {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .btnCadastresePosicao {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .icone_cadastro {
+        height: 25px;
+        width: 34px;
+        filter: invert(100%);
+    }
+
+    .icone_login {
+        height: 30px;
+        width: auto;
+        filter: invert(100%);    
+    }
+
+    .botoes {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .btnLogin {
+        width: 210px;
+        height: 44px;
+        background-color: yellow;
+        color: #ccc;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 15px;
+    }
+
+    .btnCadastro {
+        width: 210px;
+        height: 44px;
+        background-color: #fff;
+        color: #ccc;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 15px;
+    }
+
+    /*Categorias*/
+
+    .conteinerCategorias {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .horizontal-links {
+        display: flex;
+        list-style: none;
+        gap: 45px;
+        font-weight: bold;
+    }
+
+    .horizontal-links a {
+        color: black;
+    }
+
+
+    /*Banner Rotativo Inicial*/
+    .slider {
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+        width: 100%;
+        height: 25vw;
+        max-height: 150px;
+        position: relative;
+        
+    }
+
+    .slider img {
+        position: absolute;
+        object-fit: cover;
+        opacity: 0;  
+        transition: opacity 1000ms;
+    }
+
+    .slider img.selected {
+        opacity: 1;
+    }
+
+    /*Sessão Sobre*/
+
+    .sobre {
+        padding-top: 260px;
+
+    }
+
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .conteudo h1 {
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .conteudo p {
+        font-size: 20px;
+        font-weight: 800;
+        width: 65%;
+        text-align: center;
+        color: rgb(120, 120, 120);
+        padding-bottom: 45px;
+    }
+
+    .alinharImgs {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .alinharImgTxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .alinharImgTxt img {
+        width: 100px;
+        height: auto;
+    }
+
+    .alinharImgTxt h3 {
+        font-size: 22px;
+    }
+
+    .conteudo button {
+        background-color: #0099ff;
+        -webkit-box-shadow: 12px 7px 25px 3px rgba(0,0,0,0.5); 
+        box-shadow: 12px 7px 25px 3px rgba(0,0,0,0.5);
+        border-radius: 15px;
+        width: 315px;
+        height: 85px;
+        font-size: 28px;
+        font-weight: 700;
+        border-style: none;
+        margin-top: 40px;
+    }
+
+    .conteudo a {
+        color: #fff; 
+    }
+
+    /*Sessão Banners Semanais*/
+
+    .bannerPromoSemanal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 90px;  
+    }
+
+    .bannerPromo1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 170px;
+        background-color: aqua;
+        border-radius: 10px; 
+    }
+
+    .bannerPromo2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 170px;
+        background-color: blueviolet;
+        border-radius: 10px;
+    }
+
+    .bannerPromo3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 170px;
+        background-color: #0000ff;
+        border-radius: 10px; 
+    }
+
+    .bannerPromo1 p {
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center; 
+    }
+
+    .bannerPromo2 p {
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center; 
+    }
+
+    .bannerPromo3 p {
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center; 
+    }
+
+    /*Sessão Cards Profissionais*/
+
+    .conteinerCards {
+        display: flex;
+        justify-content: center;
+        gap: 95px;
+        align-items: center;    
+        margin-top: 50px;   
+        width: 100%;
+        height: 400px;
+        background-color: #cccc;
+    }
+
+    .card1 {
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;    
+        width: 320px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+
+    }
+    
+    .card1 img {
+        width: 60px;
+        height: auto;
+    }
+
+    .card1 h2 {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;   
+    }
+
+    .card1 p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .card2 {
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;    
+        width: 320px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+
+    }
+    
+    .card2 img {
+        width: 60px;
+        height: auto;
+    }
+
+    .card2 h2 {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;   
+    }
+
+    .card2 p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .card3 {
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;    
+        width: 320px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+
+    }
+    
+    .card3 img {
+        width: 60px;
+        height: auto;
+    }
+
+    .card3 h2 {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;   
+    }
+
+    .card3 p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    /*Sessão Banner Secundário*/
+
+    .bannerRotativoSecundario {
+        display: flex;
+        padding-bottom: 300px;
+    }
+
+    .slider2 {
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+        width: 100%;
+        height: 25vw;
+        max-height: 150px;
+        position: relative;
+        
+    }
+
+    .slider2 img {
+        position: absolute;
+        object-fit: cover;
+        opacity: 0;  
+        transition: opacity 1000ms;
+    }
+
+    .slider2 img.selected2 {
+        opacity: 1;
+    }
+
+    /*Links Rodapé*/
+
+    .conteinerLinksRodape {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        gap: 60px; 
+    }
+
+    .conteinerLinksRodape a {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    /*Rodapé*/
+
+    .conteinerRodape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        background-color: gray;
+        
+    }
+
+    .conteinerRodape ul li {
+        list-style: none;
+        width: 100%;
+    }
+
+    .conteinerRodape nav ul {
+        display: flex;  
+        width: 100%;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .conteinerRodape li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
