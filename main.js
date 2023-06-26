@@ -1,5 +1,5 @@
 /*Banner Rotativo Inicial*/
-let tempo = 2000,
+let tempo = 7000,
     currentImageIndex = 0,
     images = document.querySelectorAll("section .slider img"),
     max = images.length;
@@ -28,7 +28,7 @@ window.addEventListener("load", start);
 
 
 /*Banner Rotativo Secundário*/
-let tempo2 = 2000,
+let tempo2 = 4000,
     currentImageIndex2 = 0,
     images2 = document.querySelectorAll(".slider2 img"),
     max2 = images.length;

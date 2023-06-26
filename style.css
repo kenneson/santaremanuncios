@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');   
 
     * {
         margin: 0;
@@ -8,21 +8,16 @@
     }
 
     body {
-        display: flex;
-        font-size: 100%;  
+        font-size: 16px;  
         height: 100vh;
         font-family: 'Montserrat'; 
         justify-content: center; 
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .no-scrollbar {
+        overflow-x: hidden;
     }
-
-    /*Mini Banner Promocional Topo do Site*/
-
+    
     .miniBanner {
         display: flex;
         height: 50px;
@@ -35,133 +30,131 @@
         color: #fff;
     }
 
-    /*---------------------------------------*/
+    header {
+        background-color: #0000ff;
+        height: 9rem;
+    }
 
-    /*Conteiner Azul Cabeçalho*/
-
-    .head {
+    .logo img {
         display: flex;
         align-items: center;
+        width: 100px;
+        height: auto;
+    }
+
+    .nav-bar {
+        display: flex;
         justify-content: space-around;
-        gap: 50px;
+        padding: 1.5rem 6rem;
+        align-items: center;
         width: 100%;
-        height: 270px;
         background-color: #0000ff;
-        flex-wrap: wrap;
     }
 
-    /*---------------------------------------*/
-
-    .logo {
+    .nav-list {
         display: flex;
-        width: 260px;
-        height: 260px;
+        align-items: center;
+        align-self: center;
     }
 
-    .posicaoLogo {
-        display: flex;  
-    }
-
-    /*Menu*/
-
-    .menuNav ul {
+    .nav-list ul {
         display: flex;
-        list-style-type: none;
-        gap: 60px;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .nav-item {
+        margin: 0 15px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: #fff;
         font-weight: 600;
     }
 
-    .menuNav ul li a {
-        color: #fff;
-        font-size: 20px;
+    .btnLoginPosicao img {
+        width: 1.7rem;
     }
 
-    .menuNav ul li a:hover {
-        color: yellow;
-    }
+    .btnCadastresePosicao img {
+        width: 1.9rem;
+     }
 
-    .PosicaoMenu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 60px;
-        padding-bottom: 60px;
-    }
-
-    /*---------------------------------------*/
-
-    .grupoBarraPesquisa {
+     .btnLoginPosicao {
         display: flex;
         align-items: center;
-        width: 580px;
-        height: 40px;
-        border-radius: 10px;
-        background-color: #fff;
-        justify-content: center;
-        border-style: none;
-        border: none;
-    }
+        margin-bottom: 0.65rem;
+     }
 
-    #txtBarraPesquisa{
-        width: 100%;
-        height: 35px;
-        border-style: none;
-        border-radius: 10px;
-        background-color: transparent;  
-    }
-
-
-    /* Botões Login e Cadastre-se*/
-
-    .btnLoginPosicao {
+     .btnCadastresePosicao {
         display: flex;
-        gap: 20px;
         align-items: center;
-    }
+     }
 
-    .btnCadastresePosicao {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-    }
-
-    .icone_cadastro {
-        height: 25px;
-        width: 34px;
-        filter: invert(100%);
-    }
-
-    .icone_login {
-        height: 30px;
-        width: auto;
-        filter: invert(100%);    
-    }
-
-    .botoes {
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-    }
-
-    .btnLogin {
-        width: 210px;
-        height: 44px;
+     .btnLogin {
+        width: 7.75rem;
+        height: 1.85rem;
         background-color: yellow;
         color: #ccc;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
-        border-radius: 15px;
+        border-radius: 10px;
+        margin-left: 0.5rem;
     }
 
     .btnCadastro {
-        width: 210px;
-        height: 44px;
+        width: 7.75rem;
+        height: 1.85rem;
         background-color: #fff;
         color: #ccc;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
-        border-radius: 15px;
+        border-radius: 10px;
+        margin: 0.5rem;
     }
+
+    .mobile-menu-icon {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+    
+    /*Barra de Pesquisa*/
+
+    .grupoBarraPesquisa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        background-color: #0000ff;
+        padding-bottom: 2rem;
+      }
+      
+      input {
+        width: 40%;
+      }
+
+      input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+      }
+      
+      button[type="submit"] {
+        padding: 8px 16px;
+        background-color: yellow;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+      }
+
+      .grupoBarraPesquisa button img {
+        width: 0.80rem;
+      }
 
     /*Categorias*/
 
@@ -187,13 +180,13 @@
 
 
     /*Banner Rotativo Inicial*/
+
     .slider {
         display: flex;
         padding-top: 50px;
         justify-content: center;
-        width: 100%;
-        height: 25vw;
-        max-height: 150px;
+        max-width: 100%;
+        height: auto;
         position: relative;
         
     }
@@ -212,8 +205,8 @@
     /*Sessão Sobre*/
 
     .sobre {
-        padding-top: 260px;
-
+        padding-top: 22rem;
+        
     }
 
     .conteudo {
@@ -221,12 +214,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .conteudo h1 {
         font-size: 38px;
         font-weight: 700;
+        text-align: center;
     }
 
     .conteudo p {
@@ -253,12 +247,13 @@
     }
 
     .alinharImgTxt img {
-        width: 100px;
+        width: 6.25rem;
         height: auto;
     }
 
     .alinharImgTxt h3 {
         font-size: 22px;
+        text-align: center;
     }
 
     .conteudo button {
@@ -271,7 +266,7 @@
         font-size: 28px;
         font-weight: 700;
         border-style: none;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .conteudo a {
@@ -284,7 +279,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 90px;  
+        padding-top: 7rem;  
     }
 
     .bannerPromo1 {
@@ -340,14 +335,18 @@
 
     /*Sessão Cards Profissionais*/
 
+    .cardsProfissionais {
+        padding-top: 1rem;
+    }
+
     .conteinerCards {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         gap: 95px;
         align-items: center;    
         margin-top: 50px;   
         width: 100%;
-        height: 400px;
+        height: 30rem;
         background-color: #cccc;
     }
 
@@ -357,8 +356,8 @@
         padding: 20px;
         flex-direction: column;
         align-items: center;    
-        width: 320px;
-        height: 350px;
+        width: 20rem;
+        height: 25rem;
         background-color: #fff;
         border-radius: 10px;
 
@@ -386,8 +385,8 @@
         padding: 20px;
         flex-direction: column;
         align-items: center;    
-        width: 320px;
-        height: 350px;
+        width: 20rem;
+        height: 25rem;
         background-color: #fff;
         border-radius: 10px;
 
@@ -415,8 +414,8 @@
         padding: 20px;
         flex-direction: column;
         align-items: center;    
-        width: 320px;
-        height: 350px;
+       width: 20rem;
+        height: 25rem;
         background-color: #fff;
         border-radius: 10px;
 
@@ -442,7 +441,8 @@
 
     .bannerRotativoSecundario {
         display: flex;
-        padding-bottom: 300px;
+        padding-top: 1rem;
+        padding-bottom: 18.75rem;
     }
 
     .slider2 {
@@ -469,7 +469,11 @@
 
     /*Links Rodapé*/
 
-    .conteinerLinksRodape {
+    .linksRodape {
+        padding-top: 0.10rem;
+    }
+
+  .conteinerLinksRodape {
         display: flex;
         width: 100%;
         height: 40px;
@@ -487,25 +491,38 @@
 
     /*Rodapé*/
 
+    .rodape {
+        padding-top: 148.1rem;
+    }
+
     .conteinerRodape {
         display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-        height: 300px;
-        background-color: gray;
-        
+        justify-content: space-around;
+        align-items: center;
+        height: 12.75rem;
+        background-color: gray; 
+    }
+
+    .conteinerRodapeConteudo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3.75rem;
     }
 
     .conteinerRodape ul li {
         list-style: none;
         width: 100%;
+        line-height: 1.65rem;
     }
 
     .conteinerRodape nav ul {
-        display: flex;  
+        display: flex; 
+        flex-direction: column; 
         width: 100%;
-        justify-content: center;
+        text-align: left;
+        justify-content: space-around;
         align-items: center;    
     }
 
@@ -515,8 +532,17 @@
         font-weight: 700;
     }
 
-    .copyright {
+    .copy-info {
         display: flex;
+        color: #fff;
+        font-weight: 500;
+        background-color: gray;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
+        height: 4rem;
     }
+
+
+ 
+

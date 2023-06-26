@@ -6,68 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Santarém Anúncios - anúncios de produtos e serviços em Santarém">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/mobile.css">
+    <link rel="stylesheet" href="responsivoheader.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Santarém Anúncios</title>
 </head>
 <body>
-  <main>    
-    <section class="cabecalho">
-        <div class="miniBanner">PROMOÇÕES</div>
-        <header class="head">
-            <div class="posicaoLogo">
-                <div class="logo">
-                    <img src="./imgs/logo_santarem_anuncios.png" alt="logo Santarém Anúncios">
-                </div>
+  <main class="no-scrollbar">    
+    <div class="miniBanner">PROMOÇÕES</div>
+    <header>
+      <nav class="nav-bar">  
+            <div class="logo">
+                <img src="./imgs/logo_santarem_anuncios.png" alt="logo Santarém Anúncios">
             </div>
-            <div class="PosicaoMenu">
-                <div class="menuNav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Quem Somos</a></li>
-                            <li><a href="#">Como Divulgar</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </nav>              
-                </div>
-                <div class="grupoBarraPesquisa">    
-                    <input type="text" id="txtBarraPesquisa" placeholder="Busque por um produto ou serviço..." />
-                    <img src="./icones/icone_lupa.png" id="btnBusca" alt="lupa de pesquisa"/>    
-                </div>
-            </div>
-            <div class="botoes">
-                <div class="btnLoginPosicao">
-                    <img class="icone_login" src="./icones/icone_cadeado.png" alt="ícone de cadeado">
-                    <button class="btnLogin"> <a href="https://santaremanuncios.com/login.html">LOGIN</a></button>  
-                </div>
-                <div class="btnCadastresePosicao">
-                    <img class="icone_cadastro" src="./icones/icone_usuarios.png" alt="ícone de usuários">
-                    <button class="btnCadastro"> <a href="https://santaremanuncios.com/opcoes_cadastro.html">CADASTRE-SE</a></button>   
-                </div> 
-            </div>
-        </header>
-        <div class="conteinerCategorias">
-            <ul class="horizontal-links">
-                <li><a href="#">Moda</a></li>
-                <li><a href="#">Celulares e Telefonia</a></li>
-                <li><a href="#">Informática e Periféricos</a></li>
-                <li><a href="#">Supermercados</a></li>
-                <li><a href="#">Eletrodomésticos</a></li>
-                <li><a href="#">Concessionárias</a></li>
-                <li><a href="#">Papelarias</a></li>
-                <li><a href="#"><Strong>Mais</Strong></a></li>
-              </ul>
-        </div>
-    </section>
 
-    <section class="bannerRotativo">
-      <div class="slider">
-        <img class="selected" src="./imgs/banner promocional.png" alt="banner1">
-        <img src="./imgs/banner promocional 2.png" alt="banner2">
-        <img src="./imgs/banner promocional 3.png" alt="banner3">
-      </div>    
-    </section>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Como Divulgar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="botoes">
+            <div class="btnLoginPosicao">
+                <img class="icone_login" src="./icones/icone-cadeado.svg" alt="ícone de cadeado">
+                <button class="btnLogin"><a href="https://santaremanuncios.com/login.html">LOGIN</a></button>
+            </div>
+            <div class="btnCadastresePosicao">
+                <img class="icone_cadastro" src="./icones/icone-cadastro.svg" alt="ícone de usuários">
+                <button class="btnCadastro"> <a href="https://santaremanuncios.com/opcoes_cadastro.html">CADASTRE-SE</a></button>
+            </div>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./menu_white_36dp.svg" alt=""></button>
+        </div>
+
+     </nav>
+
+     <div class="grupoBarraPesquisa">
+        <input type="text" id="txtBarraPesquisa" placeholder="Busque por um produto ou serviço..." />
+        <button type="submit" id="btnBusca"><img src="./icones/icone_lupa.png" alt="lupa de pesquisa"/></button> 
+    </div>
+
+     <div class="mobile-menu">
+        <ul> 
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Como Divulgar</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+
+        <div class="botoes">
+            <div class="btnLoginPosicao">
+                <img class="icone_login" src="./icones/icone-cadeado.svg" alt="ícone de cadeado">
+                <button class="btnLogin"><a href="https://santaremanuncios.com/login.html">LOGIN</a></button>
+            </div>
+            <div class="btnCadastresePosicao">
+                <img class="icone_cadastro" src="./icones/icone-cadastro.svg" alt="ícone de usuários">
+                <button class="btnCadastro"> <a href="https://santaremanuncios.com/opcoes_cadastro.html">CADASTRE-SE</a></button>
+            </div>
+        </div>
+
+     </div>
+
+     <div class="conteinerCategorias">
+      <ul class="horizontal-links">
+          <li><a href="#">Moda</a></li>
+          <li><a href="#">Celulares e Telefonia</a></li>
+          <li><a href="#">Informática e Periféricos</a></li>
+          <li><a href="#">Supermercados</a></li>
+          <li><a href="#">Eletrodomésticos</a></li>
+          <li><a href="#">Concessionárias</a></li>
+          <li><a href="#">Papelarias</a></li>
+          <li><a href="#">Mais</a></li>
+        </ul>
+  </div>
+
+  <section class="bannerRotativo">
+    <div class="slider">
+      <img class="selected" src="./imgs/banner promocional.png" alt="banner1">
+      <img src="./imgs/banner promocional 2.png" alt="banner2">
+      <img src="./imgs/banner promocional 3.jpeg" alt="banner3">
+    </div>    
+  </section>
 
   <section class="sobre">
     <div class="conteudo">
@@ -94,7 +117,8 @@
         <button><a href="https://santaremanuncios.com/opcoes_cadastro.html" target="_blank">Cadastre-se agora <br> 1º Mês Grátis!</a></button>
     </div>
   </section>
-  
+
+
   <section class="bannerPromoSemanal">
 
     <div class="bannerPromo1">
@@ -112,7 +136,6 @@
     </div>
 
   </section>
-
 
   <section class="cardsProfissionais">
 
@@ -142,47 +165,81 @@
   </section>
 
   <section class="bannerRotativoSecundario">
-        <div class="slider2">
-          <img class="selected2" src="./imgs/banner secundario.png" alt="bannerSec1">
-          <img src="./imgs/banner secundario2.png" alt="bannerSec2">
-          <img src="./imgs/banner secundario3.png" alt="bannerSec3">
-        </div>    
+    <div class="slider2">
+      <img class="selected2" src="./imgs/banner secundario.png" alt="bannerSec1">
+      <img src="./imgs/banner secundario2.png" alt="bannerSec2">
+      <img src="./imgs/banner secundario3.png" alt="bannerSec3">
+    </div>    
+</section>
+
+<section class="linksRodape">
+  <div class="conteinerLinksRodape">
+      <a target="_blank" href="https://santaremanuncios.com/como_divulgar.php">COMO DIVULGAR CONOSCO? |</a>
+      <a target="_blank" href="https://santaremanuncios.com/quem_somos.php">QUEM SOMOS |</a>
+      <a target="_blank" href="https://santaremanuncios.com/faleconosco.html">FALE CONOSCO |</a>
+  </div>
   </section>
 
-  <section class="linksRodape">
-    <div class="conteinerLinksRodape">
-        <a target="_blank" href="https://santaremanuncios.com/como_divulgar.php">COMO DIVULGAR CONOSCO? |</a>
-        <a target="_blank" href="https://santaremanuncios.com/quem_somos.php">QUEM SOMOS |</a>
-        <a target="_blank" href="https://santaremanuncios.com/faleconosco.html">FALE CONOSCO |</a>
-    </div>
-  </section>
-
+</header>
+<!-- daqui pra baixo não é responsivo, daqui pra cima sim -->
   <footer class="rodape">
     <div class="conteinerRodape">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Como Divulgar</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Cadastre-se</a></li>    
-                <li><a target="_blank" href="https://santaremanuncios.com/consultar_eventos.php">Agenda de eventos da cidade!</a></li>
-                <li><a target="_blank" href="https://santaremanuncios.com/pesquisar_profissionais.php">Procurando Algum Profissional?</a></li>
-                <li><a href="#">Destaques Semanais</a></li>
-            </ul>
-      
+     <div class="conteinerRodapeConteudo">
+      <nav>
+        <ul class="menu-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Como Divulgar</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Cadastre-se</a></li>
+        </ul>
+      </nav>
 
-        <div class="copyright">
-             <p>&copy; 2023 Santarém Anúncios - Todos os direitos reservados</p>
-             <p>Desenvolvido por: <a href="">Kenneson Anderson</a> & Alexandre Sousa</p>
-        </div> 
-    </nav>
+      <nav>
+        <ul class="menu-links2">
+          <li><a target="_blank" href="https://santaremanuncios.com/consultar_eventos.php">Agenda de eventos da cidade!</a></li>
+          <li><a target="_blank" href="https://santaremanuncios.com/pesquisar_profissionais.php">Procurando Algum Profissional?</a></li>
+          <li><a href="#">Destaques Semanais</a></li>
+        </ul>
+      </nav>
     </div>
-</footer>
 
-  </main> 
+      <h1 class="teste">Icones das redes sociais</h1>
+
+    </div>
+
+    
+
+        <div class="copy-info">
+          <p>&copy; 2023 Santarém Anúncios - Todos os direitos reservados</p>
+          <p>Desenvolvido por: <a href="https://github.com/kenneson">Kenneson Anderson</a> & Alexandre Sousa</p>
+        </div>
+      
+    
+  </footer>
+
+
+  
+    
+   
+  
+    
+    
+      
+  
+  
+  
+
+  
+</main> 
+  
+
+
+  
+  
+  
   
   <script src="main.js"></script>
-  
+  <script src="./reponsivo.js"></script>
 </body>
 </html>
