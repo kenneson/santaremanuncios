@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santarém Anúncios - anúncios de produtos e serviços em Santarém">
+    <link rel="stylesheet" href="styleheader.css">
+    <link rel="stylesheet" href="responsivoheader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Santarém Anúncios</title>
+</head>
+<body>
+    <div class="miniBanner">PROMOÇÕES</div>
+    <header>
+      <nav class="nav-bar">  
+            <div class="logo">
+                <img src="./imgs/logo_santarem_anuncios.png" alt="logo Santarém Anúncios">
+            </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Como Divulgar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="botoes">
+            <div class="btnLoginPosicao">
+                <img class="icone_login" src="./icones/icone-cadeado.svg" alt="ícone de cadeado">
+                <button class="btnLogin"><a href="https://santaremanuncios.com/login.html">LOGIN</a></button>
+            </div>
+            <div class="btnCadastresePosicao">
+                <img class="icone_cadastro" src="./icones/icone-cadastro.svg" alt="ícone de usuários">
+                <button class="btnCadastro"> <a href="https://santaremanuncios.com/opcoes_cadastro.html">CADASTRE-SE</a></button>
+            </div>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./menu_white_36dp.svg" alt=""></button>
+        </div>
+
+     </nav>
+
+     <div class="grupoBarraPesquisa">
+        <input type="text" id="txtBarraPesquisa" placeholder="Busque por um produto ou serviço..." />
+        <button type="submit" id="btnBusca"><img src="./icones/icone_lupa.png" alt="lupa de pesquisa"/></button> 
+    </div>
+
+     <div class="mobile-menu">
+        <ul> 
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Como Divulgar</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+
+        <div class="botoes">
+            <div class="btnLoginPosicao">
+                <img class="icone_login" src="./icones/icone-cadeado.svg" alt="ícone de cadeado">
+                <button class="btnLogin"><a href="https://santaremanuncios.com/login.html">LOGIN</a></button>
+            </div>
+            <div class="btnCadastresePosicao">
+                <img class="icone_cadastro" src="./icones/icone-cadastro.svg" alt="ícone de usuários">
+                <button class="btnCadastro"> <a href="https://santaremanuncios.com/opcoes_cadastro.html">CADASTRE-SE</a></button>
+            </div>
+        </div>
+
+     </div>
+    </header>
+
+       
+    
+        <script src="./reponsivo.js"></script>
+</body>
+</html>

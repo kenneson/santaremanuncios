@@ -52,3 +52,5 @@ function start2 () {
 }
 
 window.addEventListener("load", start2);
+
+//slide cards

@@ -335,125 +335,27 @@
 
     /*Sessão Cards Profissionais*/
 
-    .cardsProfissionais {
-        padding-top: 1rem;
+   .cardsProfissionais {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
-    .conteinerCards {
-        display: flex;
-        justify-content: space-around;
-        gap: 95px;
-        align-items: center;    
-        margin-top: 50px;   
-        width: 100%;
-        height: 30rem;
-        background-color: #cccc;
-    }
-
-    .card1 {
-        display: flex;
-        gap: 50px;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;    
-        width: 20rem;
-        height: 25rem;
-        background-color: #fff;
-        border-radius: 10px;
-
-    }
-    
-    .card1 img {
-        width: 60px;
-        height: auto;
-    }
-
-    .card1 h2 {
-        font-size: 18px;
-        font-weight: 300;
-        font-style: italic;   
-    }
-
-    .card1 p {
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .card2 {
-        display: flex;
-        gap: 50px;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;    
-        width: 20rem;
-        height: 25rem;
-        background-color: #fff;
-        border-radius: 10px;
-
-    }
-    
-    .card2 img {
-        width: 60px;
-        height: auto;
-    }
-
-    .card2 h2 {
-        font-size: 18px;
-        font-weight: 300;
-        font-style: italic;   
-    }
-
-    .card2 p {
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .card3 {
-        display: flex;
-        gap: 50px;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;    
-       width: 20rem;
-        height: 25rem;
-        background-color: #fff;
-        border-radius: 10px;
-
-    }
-    
-    .card3 img {
-        width: 60px;
-        height: auto;
-    }
-
-    .card3 h2 {
-        font-size: 18px;
-        font-weight: 300;
-        font-style: italic;   
-    }
-
-    .card3 p {
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    /*Sessão Banner Secundário*/
+    /*Banner Secundario*/
 
     .bannerRotativoSecundario {
         display: flex;
-        padding-top: 1rem;
-        padding-bottom: 18.75rem;
+        height: 25rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .slider2 {
         display: flex;
-        padding-top: 50px;
+        align-items: center;
         justify-content: center;
         width: 100%;
-        height: 25vw;
-        max-height: 150px;
+        height: 5rem;
         position: relative;
-        
     }
 
     .slider2 img {
@@ -470,29 +372,29 @@
     /*Links Rodapé*/
 
     .linksRodape {
-        padding-top: 0.10rem;
+        padding-top: 6.10rem;
     }
 
   .conteinerLinksRodape {
         display: flex;
         width: 100%;
-        height: 40px;
+        height: 2.5rem;
         background-color: black;
         justify-content: center;
         align-items: center;
-        gap: 60px; 
+        gap: 55px; 
     }
 
     .conteinerLinksRodape a {
         color: #fff;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 700;
     }
 
     /*Rodapé*/
 
     .rodape {
-        padding-top: 148.1rem;
+        padding-top: 154rem;
     }
 
     .conteinerRodape {
@@ -528,8 +430,13 @@
 
     .conteinerRodape li a {
         color: #fff;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
+    }
+
+    .conteinerRodape h1 {
+        display: flex;
+        text-align: right;
     }
 
     .copy-info {
