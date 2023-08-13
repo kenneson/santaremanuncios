@@ -219,9 +219,15 @@
     
     .conteinerLinksRodape a {
         color: #fff;
-        font-size: 0.70rem;
+        font-size: 0.60rem;
         font-weight: 700;
         text-align: center;
+    }
+
+    .conteinerRodape li a {
+        color: #fff;
+        font-size: 0.70rem;
+        font-weight: 600;
     }
     
 }
@@ -245,3 +251,16 @@
        bottom: 8rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
